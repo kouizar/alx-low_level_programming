@@ -3,17 +3,23 @@
 /**
  * main - Entry point
  *
- *
- * Return: Always 0 (Sucess)
+ * Return: Always 0 (Succes)
  */
 
 int main(void)
 {
-	char c;
+	int n;
 
-	for (c = 'z' ; c >= 'a' ; c--)
+	for (n = 0 ; n < 16 ; n++)
 	{
-		putchar(c);
+		if (n < 10)
+		{
+			putchar('0' + n);
+		}
+		else
+		{
+			putchar(87 + n);
+		}
 	}
 	putchar('\n');
 	return (0);
